@@ -1,0 +1,1 @@
+<template><RouterLink to="/" class="brand" aria-label="秦安婚车 AI 首页"><img src="/blossom.svg" width="42" height="42" alt=""><span class="brand-type"><strong>秦安婚车 <i>AI</i></strong><small>QIN'AN WEDDING AI</small></span></RouterLink></template>
