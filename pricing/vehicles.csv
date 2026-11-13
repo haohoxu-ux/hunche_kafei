@@ -1,0 +1,12 @@
+编号,车型,用途,对客价,状态,图片,图片说明,地区
+s450-head,奔驰 S450,头车,600,试配,/assets/images/fleet-maybach.webp,奔驰车队参考图,县城
+h9-head,红旗 H9,头车,600,试配,/assets/images/fleet-convoy.webp,红旗车队参考图,县城
+e300-head,奔驰 E300,头车,500,试配,/assets/images/fleet-line.webp,接亲车队参考图,县城
+range-head,路虎揽胜,头车,800,试配,/assets/images/fleet-street.webp,迎亲现场参考图,县城
+a6-town,奥迪 A6 C8/C9,头车,,试配,/assets/images/fleet-line.webp,接亲车队参考图,乡镇
+a6-tail,奥迪 A6 C7/C8,跟车,320,试配,/assets/images/fleet-line.webp,接亲车队参考图,县城
+hs5-tail,红旗 HS5,跟车,300,试配,/assets/images/fleet-convoy.webp,红旗车队参考图,县城
+e300-tail,奔驰 E300,跟车,300,试配,/assets/images/fleet-maybach.webp,奔驰车队参考图,县城
+bmw5-tail,宝马 5 系,跟车,320,试配,/assets/images/fleet-street.webp,迎亲现场参考图,县城
+h5-tail,红旗 H5,跟车,,试配,/assets/images/fleet-convoy.webp,红旗车队参考图,县城
+a6c9-tail,奥迪 A6 C9,跟车,,试配,/assets/images/fleet-line.webp,接亲车队参考图,县城

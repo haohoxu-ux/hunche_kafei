@@ -21,8 +21,8 @@ onBeforeUnmount(()=>reduce.removeEventListener('change',preference))
   <div class="hero-shade"></div>
   <div class="hero-content wrap"><p class="eyebrow hero-overline"><span></span> QIN'AN WEDDING AI</p>
   <h1 id="hero-title">让每一场婚礼，<br>都有属于秦安的<em>仪式感。</em></h1>
-  <p class="hero-intro">从婚车搭配、专属方案，到智能报价与预约，<br class="desktop-break">让 AI 重新定义婚车服务体验。</p>
-  <div class="hero-actions"><RouterLink class="btn primary" to="/#design">探索婚车方案 <ArrowRight :size="17"/></RouterLink><RouterLink class="btn ghost" to="/agents"><Sparkles :size="16"/> 进入 AI 超市</RouterLink></div></div>
+  <p class="hero-intro">从一辆喜欢的头车开始，或聊聊你心中的迎亲画面。</p>
+  <div class="hero-actions"><RouterLink class="btn primary" to="/fleet">自己选车算价 <ArrowRight :size="17"/></RouterLink><RouterLink class="btn ghost" to="/advisor"><Sparkles :size="16"/> 聊聊我想要的婚礼</RouterLink></div></div>
   <div class="hero-bottom wrap"><RouterLink to="/#story" class="scroll-link"><span class="circle"><ArrowDown :size="16"/></span><span>向下探索<small>SCROLL TO EXPLORE</small></span></RouterLink>
     <div class="film-panel"><div class="film-text"><span class="film-kicker"><i></i> BRAND FILM</span><span class="film-name">{{ scenes[current].name }}</span></div><div class="chapters" v-if="!failed"><button v-for="(s,i) in scenes" :key="s.at" @click="seek(i)" :class="{active:i===current}" :aria-label="'播放第'+(i+1)+'幕：'+s.name" :aria-pressed="i===current"><span></span></button></div><span class="film-index">0{{current+1}} <b>/ 03</b></span><button v-if="!failed" class="circle film-toggle" :aria-label="playing?'暂停品牌影像':'播放品牌影像'" @click="toggle"><component :is="playing?Pause:Play" :size="15" fill="currentColor"/></button></div>
   </div>

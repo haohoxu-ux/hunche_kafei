@@ -11,6 +11,9 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: Home },
+    { path: '/fleet', component: () => import('./views/Fleet.vue'), meta: { title: '自己选车算价' } },
+    { path: '/advisor', component: () => import('./views/Advisor.vue'), meta: { title: '聊聊我想要的婚礼' } },
+    { path: '/quote', component: () => import('./views/Quote.vue'), meta: { title: '我的婚车报价' } },
     { path: '/agents', component: Market },
     { path: '/agents/:slug', component: Studio, beforeEnter: to => agents.some(a => a.slug === to.params.slug) || '/agents' },
     { path: '/:pathMatch(.*)*', redirect: '/' }
@@ -24,7 +27,7 @@ const router = createRouter({
 })
 router.afterEach(to => {
   const agent = agents.find(a => a.slug === to.params.slug)
-  document.title = (agent?.name || (to.path === '/agents' ? 'AI 超市' : '秦安婚车 AI')) + " · QIN'AN WEDDING AI"
+  document.title = (agent?.name || to.meta.title || (to.path === '/agents' ? 'AI 超市' : '秦安婚车 AI')) + " · QIN'AN WEDDING AI"
 })
 createApp(App).use(router).mount('#app')
 

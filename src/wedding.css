@@ -1,0 +1,50 @@
+.wedding-page{padding-block:130px 115px;max-width:1240px;min-height:80vh}
+.wedding-heading,.fleet-tools,.vehicle-bottom,.dialog-heading,.quote-total,.price-row,.chat-bar,.wedding-actions{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.wedding-heading{align-items:flex-end;margin-bottom:28px}
+.wedding-heading h1{font-size:clamp(36px,4.3vw,68px);line-height:1.16;letter-spacing:-.05em;margin:9px 0 14px}
+.wedding-heading p,.wedding-panel>p,.wedding-dialog>p,.advisor-aside p{color:var(--muted);line-height:1.7}
+.wedding-heading .wedding-kicker{font-size:12px;color:var(--wine);letter-spacing:.15em}
+.wedding-link{display:inline-flex;align-items:center;gap:7px;color:var(--wine);font-weight:600;font-size:14px;padding-block:6px}
+.trial-note,.pending{padding:11px 14px;background:#eee7da;border-radius:5px;font-size:13px;line-height:1.7;color:#6d553a}
+.fleet-tools{margin:25px 0 19px;flex-wrap:wrap}
+.choice-tabs,.quick-sizes,.counter,.chat-options,.road-options{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.choice-tabs{background:#e9e2d8;border-radius:24px;padding:4px}
+.choice-tabs button,.quick-sizes button,.chat-options button{padding:8px 16px;border-radius:22px;font-size:14px}
+.choice-tabs button[aria-pressed=true]{color:white;background:#51362f}
+.quick-sizes span,.wedding-page small{color:var(--muted);font-size:12px}
+.quick-sizes button,.chat-options button,.wedding-page .outline{border:1px solid var(--line)}
+.vehicle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.vehicle-card,.wedding-panel,.chat-panel,.advisor-aside{background:#fffcf7;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.vehicle-photo{position:relative;aspect-ratio:1.86;background:#e3d9cb}
+.vehicle-photo img{width:100%;height:100%;object-fit:cover}
+.vehicle-photo span{position:absolute;bottom:7px;left:8px;background:#28221fc7;color:#fff;padding:3px 8px;border-radius:3px;font-size:11px}
+.vehicle-body{padding:17px 20px}.vehicle-body h2{font-size:26px;margin:4px 0 12px}
+.vehicle-bottom b,.quote-total b{color:#803c32;font-size:21px}.counter{gap:7px;flex-wrap:nowrap}
+.counter button,.chat-compose button{min-width:38px;min-height:38px;border-radius:50%;background:#613c35;color:#fff;display:grid;place-items:center;font-size:12px}
+.fleet-dock{position:fixed;bottom:max(18px,env(safe-area-inset-bottom));left:max(18px,calc((100vw - 1240px)/2));z-index:15;display:flex;align-items:center;gap:12px;color:#fff6ea;background:#342a25;border-radius:32px;padding:14px 22px;box-shadow:0 5px 24px #352b2438}
+.fleet-dock b{padding:2px 7px;border-radius:12px;background:#eac2ae;color:#462e24;font-size:12px}.fleet-dock strong{padding-left:12px;border-left:1px solid #ffffff50}
+.fleet-flight{position:fixed;width:54px;height:38px;object-fit:cover;border-radius:6px;pointer-events:none;z-index:60}
+.wedding-dialog{width:min(460px,94vw);max-height:85svh;margin:auto;padding:24px;border:1px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink)}
+.wedding-dialog::backdrop{background:#211b18a6}.wedding-dialog h2,.wedding-panel h2,.suggestion h2,.advisor-aside h2{font-size:26px;margin-bottom:10px}
+.wedding-dialog .btn,.suggestion .btn{margin-top:12px}.dialog-heading button{padding:8px}.basket-row{padding:12px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px}.basket-row img{width:60px;height:48px;object-fit:cover;border-radius:4px}
+.basket-row>div:nth-child(2),.price-row>div{display:grid;gap:4px}.basket-row .counter{margin-left:auto}.basket-row span{font-size:13px}
+.quote-total{padding:17px 0}.wedding-actions{justify-content:flex-start;flex-wrap:wrap}
+.quote-layout,.advisor-layout{display:grid;align-items:start;gap:24px}.quote-layout{grid-template-columns:1fr 1fr}.advisor-layout{grid-template-columns:minmax(0,1.8fr) minmax(220px,1fr)}
+.wedding-panel,.chat-panel{padding:26px}.wedding-panel h2,.chat-bar span{display:flex;align-items:center;gap:9px}
+.trip-fields,.lead-form fieldset{border:0;padding:0;margin:18px 0;display:grid;gap:15px}.trip-fields{grid-template-columns:1fr 1fr}
+.trip-fields>label,.lead-form label{display:grid;gap:7px;font-size:14px;color:#534a40}
+.wedding-page input:not([type=checkbox]),.wedding-page textarea{min-width:0;width:100%;padding:11px 12px;border:1px solid #cbc2b4;border-radius:5px;background:#fffefa;color:var(--ink);font:inherit}
+.road-options{grid-column:1/-1;gap:16px}.road-options label{font-size:14px}.road-options input{accent-color:var(--wine)}
+.price-row{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.price-row b{white-space:nowrap}
+.pending{margin-top:14px}.pending ul{padding-left:20px}.quote-sheet>.btn,.lead-form>.btn{width:100%}.quote-sheet .trial-note{margin-bottom:8px}
+.lead-form{border-top:1px solid var(--line);padding-top:20px}.lead-form .choice-tabs{justify-self:start}.lead-form>.btn{margin-top:12px}.lead-form small{line-height:1.7}
+.receipt{display:flex;gap:12px;background:#e7ede2;padding:14px;border-radius:5px}.receipt small{overflow-wrap:anywhere}.receipt p{margin:5px 0}
+.chat-bar{padding-bottom:14px;border-bottom:1px solid var(--line)}.chat-bar button{font-size:13px;color:var(--wine)}
+.wedding-chat{max-height:52svh;overflow:auto;overscroll-behavior:contain;padding:16px 0;display:flex;flex-direction:column;gap:12px}
+.bubble{width:fit-content;max-width:91%;padding:12px 16px;border-radius:12px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere;font-size:15px}
+.bubble.advisor{background:#f0e9df;border-bottom-left-radius:2px}.bubble.user{background:#edd6cd;align-self:flex-end;border-bottom-right-radius:2px}
+.chat-options{margin:14px 0}.chat-options button{font-size:13px;color:#734239}.chat-compose{display:flex;align-items:center;gap:10px}.chat-compose textarea{resize:vertical}
+.advisor-aside img{width:100%;height:250px;object-fit:cover}.advisor-aside>div{padding:23px}.advisor-aside .wedding-link{margin-top:16px}
+.suggestion{background:#f7f1e7;padding:20px;border-left:3px solid #b28b60}.form-error{color:#993824;margin:8px 0}.wedding-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:850px){.vehicle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advisor-layout{grid-template-columns:1fr}.advisor-aside{display:none}.quote-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.wedding-page{width:92%;padding-block:99px 100px}.wedding-heading{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:16px}.vehicle-grid{gap:10px}.vehicle-body{padding:12px 10px}.vehicle-body h2{font-size:19px}.vehicle-bottom{gap:6px;align-items:flex-start;flex-wrap:wrap}.vehicle-bottom b{font-size:17px}.counter button{min-width:32px;min-height:32px}.vehicle-photo{aspect-ratio:1.35}.vehicle-photo span{font-size:10px}.fleet-tools{gap:12px}.quick-sizes button{padding:6px 9px}.wedding-panel,.chat-panel{padding:18px}.trip-fields{gap:11px}.wedding-dialog{padding:18px}.fleet-dock{left:12px}.hero-actions{flex-wrap:wrap}}

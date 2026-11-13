@@ -39,6 +39,7 @@ onBeforeUnmount(()=>clearTimeout(timer))
           <h1>{{ agent.name }}</h1>
           <p>{{ agent.intro }}</p>
           <button class="start-key" @click="start">开始体验 <ArrowUpRight :size="16"/></button>
+          <RouterLink v-if="agent.slug==='smart-quote' || agent.slug==='car-designer'" class="start-key" :to="agent.slug==='smart-quote'?'/fleet':'/advisor'">{{agent.slug==='smart-quote'?'自己选车算价':'聊聊我想要的婚礼'}} <ArrowRight :size="16"/></RouterLink>
         </div>
         <AgentKey :agent="agent"/>
       </div>
